@@ -3,9 +3,9 @@ import re
 import time
 
 try:
-    with open('dataset\dataset.txt','r') as file:data=file.readlines()
+    with open('dataset.txt','r') as file:data=file.readlines()
 except:
-    with open('dataset\dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
+    with open('dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
 
 for i in range(0,len(data)):data[i]=data[i][:-1]
 #print(data)
@@ -163,6 +163,6 @@ while i<=len(data)-1:
         del data[i]
     
 #for i in range(0,len(data)):print(str(i+1)+': '+str(data[i]))
-with open('dataset\dataset.txt','w',encoding='utf-8') as file:
+with open('dataset.txt','w',encoding='utf-8') as file:
     for i in data:file.write(i+'\n')
 

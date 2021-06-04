@@ -1,8 +1,8 @@
 
 try:
-    with open('learnovo_master_I\dataset\dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
+    with open('learnovo_master_I\dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
 except FileNotFoundError:
-    with open('dataset\dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
+    with open('dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
 for i in range(0,len(data)):data[i]=data[i][:-1]
 
 def trace(location,tree):#location as int

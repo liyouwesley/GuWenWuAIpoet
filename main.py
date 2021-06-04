@@ -193,8 +193,8 @@ def sentfill(ori_sent,A,B):#list,str,str.七言模式单句填充
 #print(sentfill(['Z0','儿童','B9','父母','E0'],'儿童','父母'))
 #print(DEMOimagine(8,'一日不见'))
 def main7unit():
-    #title=str(input('（七言绝句模式）请输入标题'))
-    title='万邦'
+    title=str(input('（七言绝句模式）请输入标题'))
+    #title='万邦'
     titles=DEMOimagine(8,title)
     tgtles=[]
     tptles=[]

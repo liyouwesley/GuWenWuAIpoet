@@ -198,7 +198,7 @@ def varify(sent,prc):#原装list,list
 #print(varify([['W0','W0','W0','W0','W0'],[0.2,0.2,0.2,0.2,0.2]],['W3','W4','Z5']))
 
 def datasetcleaner():
-    with open('dataset\dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
+    with open('dataset.txt','r',encoding='utf-8') as file:data=file.readlines()
     j=0
     while j<len(data):
         print(str(j)+'/'+str(len(data)))
@@ -234,7 +234,7 @@ def datasetcleaner():
     data=set(data)
     data=list(data)
     data.sort()
-    with open('dataset\dataset.txt','w') as file:
+    with open('dataset.txt','w') as file:
         for i in data:file.write(i+'\n')
                                
 #datasetcleaner()
